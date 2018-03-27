@@ -1,6 +1,5 @@
 import sys
 
-
 ######## DEFINE CLASSES ########
 
 class Node:
@@ -20,23 +19,15 @@ class Player:
         self.inventory = inventory
 
 
-
 ####### CREATE NODE OBJECTS #######
 
-
 # final Nodes #
-
 end = Node("", 0, 0, '', None, None)
-
 tigerWins = Node("", 0, 0, '', None, None)
-
 jellyfishWin = Node("", 0, 0, '', None, None)
-
 jaffar = Node("", 0, 0, '', None, None)
 
-
 # all other nodes #
-
 redSea = Node("Ah... the deep blue water... but oh my! Two hundred Jellyfish are coming at you, bloodthirsty!\n\nTo swim back to shore, enter 'A'. To fight them off with your bare hands, enter 'B'.\n",
             -1,
             -1,
@@ -100,10 +91,7 @@ startGame = Node(
             route90)
 
 
-
-
 ######## DEFINE 'nextNode' & 'main' FUNCTIONS ########
-
 
 def nextNode(node, p):
 
