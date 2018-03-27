@@ -128,7 +128,7 @@ def nextNode(node, p):
         # print description #
         print(node.desc)
 
-        # user chooses next Node #
+        # user chooses next Node, call 'nextNode' function (with a new node as argument) #
         choice = ''
         while choice != 'A' and choice != 'B' and choice != 'Q':
             choice = input().upper()
@@ -147,6 +147,8 @@ def main():
     p = Player(2, 2, [])
     print("\n\n\n\n        ******** Welcome to the Middle East! ********")
     print("\nMake sure you don't run out of food or drink.\nyou can quit at any point by entering Q.\nnow, let's start...\n")
+
+    # call 'nextNode' function (with 'startGame' node as argument) #
     nextNode(startGame, p)
 
 if __name__ == '__main__':
